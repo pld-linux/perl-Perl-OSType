@@ -12,7 +12,7 @@ Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
-Source0:	http://www.cpan.org/modules/by-authors/id/D/DA/DAGOLDEN/Perl-OSType-%{version}.tar.gz
+Source0:	http://www.cpan.org/modules/by-authors/id/D/DA/DAGOLDEN/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	73be06de32cd51cf5e6de37b5725e0ac
 URL:		http://search.cpan.org/dist/Perl-OSType/
 BuildRequires:	perl-devel >= 1:5.8.0
