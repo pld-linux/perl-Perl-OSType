@@ -5,7 +5,8 @@
 %define		pdir	Perl
 %define		pnam	OSType
 %include	/usr/lib/rpm/macros.perl
-Summary:	Perl::OSType - Map Perl operating system names to generic types
+Summary:	Perl::OSType - map Perl operating system names to generic types
+Summary(pl.UTF-8):	Perl::OSType - odwzorowanie nazw systemów operacyjnych Perla na ogólne
 Name:		perl-Perl-OSType
 Version:	1.002
 Release:	1
@@ -32,6 +33,18 @@ the OS type mappings provided in Module::Build and ExtUtils::CBuilder.
 (Thus, Microsoft operating systems are given the type 'Windows' rather
 than 'Win32'.)
 
+%description -l pl.UTF-8
+Moduły uzależniające zachowanie w zależności od systemu operacyjnego
+zwykle potrzebują wiedzieć, czy bieżący system pasuje do bardziej
+ogólnego typu. Na przykłąd "linux" jest typem systemu operacyjnego
+"Unix", podobnie "freebsd".
+
+Ten moduł udostępnia odwzorowanie miedzy nazwą systemu operacyjnego
+w postaci podawanej przez $^O a bardziej ogólnym typem. Początkowa
+wersja jest operta na odwzorowaniach typów systemu zawartych w
+Module::Build i ExtUtils::CBuilder (czyli systemy operacyjne
+Microsoftu mają typ "Windows", a nie "Win32").
+
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
 
@@ -55,5 +68,5 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc Changes README
 %dir %{perl_vendorlib}/Perl
-%{perl_vendorlib}/Perl/*.pm
+%{perl_vendorlib}/Perl/OSType.pm
 %{_mandir}/man3/Perl::OSType.3pm*
