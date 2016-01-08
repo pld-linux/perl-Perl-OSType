@@ -8,13 +8,13 @@
 Summary:	Perl::OSType - map Perl operating system names to generic types
 Summary(pl.UTF-8):	Perl::OSType - odwzorowanie nazw systemów operacyjnych Perla na ogólne
 Name:		perl-Perl-OSType
-Version:	1.002
+Version:	1.009
 Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
-Source0:	http://www.cpan.org/modules/by-authors/id/D/DA/DAGOLDEN/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	73be06de32cd51cf5e6de37b5725e0ac
+Source0:	http://www.cpan.org/modules/by-module/Perl/%{pdir}-%{pnam}-%{version}.tar.gz
+# Source0-md5:	9e0cae3812bc80815f00732bde1b7e61
 URL:		http://search.cpan.org/dist/Perl-OSType/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
