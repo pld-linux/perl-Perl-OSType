@@ -4,7 +4,6 @@
 #
 %define		pdir	Perl
 %define		pnam	OSType
-%include	/usr/lib/rpm/macros.perl
 Summary:	Perl::OSType - map Perl operating system names to generic types
 Summary(pl.UTF-8):	Perl::OSType - odwzorowanie nazw systemów operacyjnych Perla na ogólne
 Name:		perl-Perl-OSType
